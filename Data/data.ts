@@ -257,7 +257,7 @@ export const blogs = [
   summary:
     "Learn the fundamentals of Artificial Intelligence and Robotics, including machine learning, automation, and intelligent system design for real-world applications.",
   discount: "50% OFF — Special Offer!",
-  image: "/images/AI-Robotics.jfif",
+  image: "/images/AI-Robotics.png",
 },
   {
     id: 5,
