@@ -84,13 +84,13 @@ export const servicesData = [
   id: 6,
   title: "Domains and Hosting",
   description: "Register domains and host websites with fast, secure, and reliable server solutions for your online presence.",
-  icon: "/images/s6.jfif",
+  icon: "/images/domain.png",
 },
   {
     id: 7,
     title: "SEO",
     description: "Improve website visibility on search engines through keyword optimization, technical SEO, and content strategy.",
-    icon: "/images/s7.jfif",
+    icon: "/images/seo.png",
   },
   {
     id: 8,
