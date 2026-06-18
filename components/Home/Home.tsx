@@ -9,6 +9,7 @@ import Blog from "./Blog/Blog";
 import Skills from "./Skills/Skills";
 import College from "../College/College";
 import Contact from "./Contact/Contact";
+import English from "./English/English";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -28,10 +29,14 @@ const Home = () => {
       <Hero />
       <About />
       <College />
+
       <Blog />
+      <English />
       <Skills />
+      
       <Services />
       <Contact />
+      
     </div>
   );
 };

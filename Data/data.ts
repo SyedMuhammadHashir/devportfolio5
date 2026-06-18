@@ -157,19 +157,19 @@ export const skillsData = [
     id: 1,
     title: "Professional Courses",
     Icon: FaBookOpen,
-    percent: "3,000",
+    percent: "50+",
   },
   {
     id: 2,
     title: "Trusted by Students",
     Icon: FaUserGraduate,
-    percent: "10000+",
+    percent: "5000+",
   },
   {
     id: 3,
     title: "Certification Exams",
     Icon: FaClipboardCheck,
-    percent: "5000+",
+    percent: "2800+",
   },
   {
     id: 4,

@@ -15,6 +15,11 @@ export const navLinks = [
     label: "College",
   },
   {
+    id: 8,
+    url: "#english",
+    label: "English Languages",
+  },
+  {
     id: 4,
     url: "#course",
     label: "Course",
@@ -30,8 +35,8 @@ export const navLinks = [
     label: "Gallery",
   },
   {
-  id: 7,
-  url: "#contacts",
-  label: "Contacts",
-},
+    id: 7,
+    url: "#contacts",
+    label: "Contacts",
+  },
 ];
