@@ -7,7 +7,7 @@ profilePic: "/images/ct.png",
 };
 export const CollegeInfo = {
   name: "College Admissions",
-  profilePic: "/images/b1.png", // Replace with your actual image path in the public folder
+  profilePic: "/images/college.png", // Replace with your actual image path in the public folder
 };
 
 export const collegeAdmissionInfo = {
