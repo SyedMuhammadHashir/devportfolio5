@@ -53,7 +53,7 @@ export default function RootLayout({
         <Footer />
         
         {/* Scroll to Top Button */}
-        <ScrollToTop />
+        
       </body>
     </html>
   );
