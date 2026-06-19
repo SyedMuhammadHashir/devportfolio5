@@ -1,73 +1,261 @@
-import SectionHeadng from "@/components/Hepler/SectionHeading"; // Kept your original typo path intact
-import { collegeAdmissionInfo, CollegeInfo } from "@/Data/data";
-import Image from "next/image";
+"use client";
+
 import React from "react";
-import { FaCheck } from "react-icons/fa";
+import SectionHeadng from "@/components/Hepler/SectionHeading";
+import { motion } from "framer-motion";
+
 
 const College = () => {
   return (
-    <section id="college">
-    <div className="pt-16 pb-16 bg-[#050709]">
-      <SectionHeadng>College</SectionHeadng>
-      
-      <div className="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-20">
-        
-        {/* Left Side: Text Content */}
-        <div 
-          data-aos="fade-right" 
-          data-aos-anchor-placement="top-center"
-          className="flex flex-col justify-center"
+    <section
+      id="college"
+      className="pt-20 pb-20 bg-[#050709] overflow-hidden"
+    >
+
+      <SectionHeadng>
+        College Admissions
+      </SectionHeadng>
+
+
+      <div className="
+      w-[90%]
+      mx-auto
+      mt-12
+      grid
+      grid-cols-1
+      lg:grid-cols-2
+      gap-12
+      items-center
+      ">
+
+
+        {/* LEFT SIDE CONTENT */}
+
+        <motion.div
+          initial={{ opacity: 0, x: -80 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-white"
         >
-          <h1 className="text-[26px] sm:text-4xl lg:text-5xl font-bold text-gray-200 titleTxtMain leading-tight">
-            {collegeAdmissionInfo.title}
-          </h1>
-          
-          <h2 className="text-xl sm:text-2xl font-semibold text-blue-400 mt-2 italic">
-            {collegeAdmissionInfo.subtitle}
+
+
+          <h2 className="
+          text-3xl
+          md:text-5xl
+          font-bold
+          leading-tight
+          "
+          >
+
+          Regular Intermediate in 
+          <span className="text-red-500">
+             {" "}Computer Science
+          </span>
+
           </h2>
-          
-          <p className="mt-6 text-base text-gray-400 leading-relaxed">
-            {collegeAdmissionInfo.description}
+
+
+
+          <h3 className="
+          mt-5
+          text-2xl
+          text-red-400
+          font-semibold
+          "
+          >
+
+          Diploma in Information Technology
+
+          </h3>
+
+
+
+          <p className="
+          mt-6
+          text-gray-300
+          text-lg
+          leading-8
+          "
+          >
+
+          Sindh Board of Technical Education (SBTE) approved
+          2-years regular intermediate diploma program admissions
+          are now open for Matric Science Group pass male and
+          female students.
+
           </p>
 
-          {/* Features / Bullet Points List */}
-          <div className="mt-8 space-y-4">
-            {collegeAdmissionInfo.features.map((feature, index) => (
-              <div 
-                key={index} 
-                className="flex items-start space-x-3 bg-gray-900/40 p-3 rounded-lg border border-gray-800/50 dir-rtl text-right lg:dir-ltr lg:text-left"
-              >
-                <div className="mt-1 bg-blue-600/20 p-2 rounded-full text-blue-400 shrink-0">
-                  <FaCheck className="text-sm" />
-                </div>
-                <p className="text-gray-300 font-medium text-sm sm:text-base pr-2 lg:pr-0">
-                  {feature}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
 
-        {/* Right Side: Picture Frame */}
-        <div 
-          data-aos="fade-left" 
-          data-aos-delay="400"
-          className="mx-auto w-full max-w-[500px] rounded-2xl border-[3.5px] border-blue-950/70 overflow-hidden shadow-2xl shadow-blue-950/20"
+
+
+          {/* FEATURES */}
+
+          <motion.div
+          whileHover={{
+            scale:1.03
+          }}
+
+          className="
+          mt-8
+          bg-[#111827]
+          p-6
+          rounded-xl
+          border
+          border-gray-700
+          "
+          >
+
+
+          <h3 className="
+          text-2xl
+          font-semibold
+          text-red-400
+          "
+          >
+
+          🎓 Admission Highlights
+
+          </h3>
+
+
+
+          <ul className="
+          mt-5
+          space-y-4
+          text-gray-300
+          ">
+
+
+          <li>
+          ✅ Matric Science Group Pass Male & Female Students
+          </li>
+
+
+          <li>
+          ✅ 2-Years Regular Intermediate Diploma Program
+          </li>
+
+
+          <li>
+          ✅ Admissions Are Open
+          </li>
+
+
+          <li>
+          ✅ Approved by Sindh Board of Technical Education
+          </li>
+
+
+          </ul>
+
+
+          </motion.div>
+
+
+
+
+
+          <motion.button
+
+          whileHover={{
+            scale:1.08
+          }}
+
+          className="
+          mt-8
+          bg-red-600
+          hover:bg-red-700
+          px-8
+          py-3
+          rounded-full
+          text-white
+          font-semibold
+          shadow-lg
+          "
+          >
+
+          Apply Now
+
+          </motion.button>
+
+
+
+        </motion.div>
+
+
+
+
+
+
+        {/* RIGHT SIDE IMAGE */}
+
+
+        <motion.div
+
+        initial={{
+          opacity:0,
+          scale:0.8
+        }}
+
+        whileInView={{
+          opacity:1,
+          scale:1
+        }}
+
+        transition={{
+          duration:0.8
+        }}
+
+        viewport={{
+          once:true
+        }}
+
+        className="
+        flex
+        justify-center
+        "
+
         >
-          <Image 
-            src={CollegeInfo.profilePic} 
-            alt={CollegeInfo.name} 
-            width={500} 
-            height={500}
-            className="w-full h-auto object-cover object-center transform hover:scale-102 transition-transform duration-300"
-            priority
-          />
-        </div>
+
+
+
+        <motion.img
+
+        src="/images/college.png"
+
+        alt="College Admission"
+
+        animate={{
+          y:[0,-15,0]
+        }}
+
+        transition={{
+          duration:3,
+          repeat:Infinity
+        }}
+
+        className="
+        w-full
+        max-w-md
+        rounded-3xl
+        shadow-2xl
+        "
+
+        />
+
+
+
+        </motion.div>
+
+
 
       </div>
-    </div>
+
+
     </section>
   );
 };
+
 
 export default College;

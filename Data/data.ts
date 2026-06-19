@@ -5,22 +5,7 @@ export const BaseInfo = {
     "Your trusted destination for professional learning and career growth. We offer quality training in IT Courses, English Language, Graphic Designing, Web Development, Digital Marketing, Forex & Crypto Trading, Freelancing, and Online Earning Skills.",
 profilePic: "/images/ct.png",
 };
-export const CollegeInfo = {
-  name: "College Admissions",
-  profilePic: "/images/college.png", // Replace with your actual image path in the public folder
-};
 
-export const collegeAdmissionInfo = {
-  title: "Regular Intermediate in Computer Science",
-  subtitle: "Diploma in Information Technology",
-  description: " Sindh Board of Technical Education (SBTE) approved 2-years regular intermediate diploma program admissions are now open for Matric Science Group pass male and female students.",
-  features: [
-    "میٹرک سائنس گروپ پاس طلباء و طالبات کیلئے (For Matric Science Group Pass Male & Female Students)",
-    "2 سالہ ریگولر انٹر میڈیٹ ڈپلومہ پروگرام (2-Years Regular Intermediate Diploma Program)",
-    "داخلے جاری ہیں (Admissions are Open)",
-    "سندھ بورڈ آف ٹیکنیکل ایجوکیشن سے منظور شدہ (Approved by Sindh Board of Technical Education)",
-  ],
-};
 
 // Data/data.js
 // Data/data.js
