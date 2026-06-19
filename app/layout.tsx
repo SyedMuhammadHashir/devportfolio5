@@ -1,30 +1,23 @@
-
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import "./globals.css";
 
 import ResponsiveNav from "@/components/Home/Nabar/ResponsiveNav";
 import Footer from "@/components/Home/Footer/Footer";
-import ScrollToTop from "@/components/Hepler/ScrollToTop";
+
 import AnimatedCursor from "react-animated-cursor";
 
 const font = Sora({
-  weight: [
-    "100",
-    "200",
-    "300",
-    "400",
-    "500",
-    "600",
-    "700",
-    "800",
-  ],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
   title: "Creative Tag Institute",
-  description: "Creative Tag Institute with next js",
+  description: "Creative Tag Institute - Modern learning platform for creative and technology professionals",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -33,32 +26,34 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="custom-scrollbar">
-      <body className={font.className}>
+    <html lang="en">
+      <body className={`${font.className} bg-[#050709]`}>
+        {/* Animated Cursor */}
+        <AnimatedCursor
+          innerSize={8}
+          outerSize={35}
+          innerScale={1}
+          outerScale={2}
+          outerAlpha={0}
+          innerStyle={{
+            backgroundColor: '#3b82f6'
+          }}
+          outerStyle={{
+            border: '3px solid #3b82f6'
+          }}
+        />
         
-        <div className="hidden md:block">
-          <AnimatedCursor
-            innerSize={8}
-            outerSize={35}
-            innerScale={2}
-            outerScale={2}
-            outerAlpha={0}
-            innerStyle={{
-              backgroundColor: "white",
-            }}
-            outerStyle={{
-              border: "3px solid white",
-            }}
-          />
-        </div>
-
+        {/* Navigation */}
         <ResponsiveNav />
-
-        {children}
-
+        
+        {/* Main Content */}
+        <main>{children}</main>
+        
+        {/* Footer */}
         <Footer />
+        
+        {/* Scroll to Top Button */}
         <ScrollToTop />
-
       </body>
     </html>
   );
