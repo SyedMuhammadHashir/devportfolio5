@@ -155,7 +155,7 @@ const English = () => {
         >
 
           <motion.img
-            src="/images/english.png"
+            src="/images/English.png"
             alt="English Language Course"
             animate={{
               y:[0,-15,0]

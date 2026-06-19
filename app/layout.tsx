@@ -24,7 +24,7 @@ const font = Sora({
 
 export const metadata: Metadata = {
   title: "Creative Tag Institute",
-  description: "Webdev portfolio with next js",
+  description: "Creative Tag Institute with next js",
 };
 
 export default function RootLayout({
