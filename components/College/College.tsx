@@ -49,7 +49,20 @@ const College = () => {
         </div>
 
         {/* Right Side: Picture Frame */}
-       
+        <div 
+          data-aos="fade-left" 
+          data-aos-delay="400"
+          className="mx-auto w-full max-w-[500px] rounded-2xl border-[3.5px] border-blue-950/70 overflow-hidden shadow-2xl shadow-blue-950/20"
+        >
+          <Image 
+            src={CollegeInfo.profilePic} 
+            alt={CollegeInfo.name} 
+            width={500} 
+            height={500}
+            className="w-full h-auto object-cover object-center transform hover:scale-102 transition-transform duration-300"
+            priority
+          />
+        </div>
 
       </div>
     </div>
