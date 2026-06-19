@@ -23,7 +23,7 @@ const font = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Webdev Portfolio",
+  title: "Creative Tag Institute",
   description: "Webdev portfolio with next js",
 };
 
